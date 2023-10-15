@@ -16,10 +16,9 @@ all: clean init
 	echo "MasterPDFEditor version: $(VERSION)"
 
 	#wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-5.8.70-qt5_included.x86_64.deb
-	wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-$(VERSION)-qt5_included.x86_64.deb
+	#wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-$(VERSION)-qt5_included.x86_64.deb
 	#wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-5.9.61-qt5.9.x86_64.deb
-	#wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-$(VERSION)-qt5.9.x86_64.deb
-	#wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-5.9.70-qt5.9.x86_64.deb
+	wget --output-document=$(PWD)/build/build.deb https://code-industry.net/public/master-pdf-editor-$(VERSION)-qt5.9.x86_64.deb
 
 	dpkg -x $(PWD)/build/build.deb $(PWD)/build
 

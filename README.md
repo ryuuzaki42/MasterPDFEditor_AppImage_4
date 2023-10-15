@@ -2,7 +2,7 @@
 # MasterPDFEditor.AppImage
 
 ## Repository: https://github.com/ryuuzaki42/MasterPDFEditor_AppImage
-    MasterPDFEditor: 5.9.61
+    MasterPDFEditor: 5.9.70
 
 ---
 https://code-industry.net/get-masterpdfeditor/

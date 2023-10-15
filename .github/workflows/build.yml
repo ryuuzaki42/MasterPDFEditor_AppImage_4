@@ -1,0 +1,41 @@
+name: build
+
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "!**"
+
+env:
+  DOCKER_BUILDKIT: 1
+  AUTHENTICATION: "${{ secrets.PROD_AUTHENTICATION }}"
+  TOKEN: "${{ secrets.PROD_TOKEN }}"
+  PACKAGE: ${{ secrets.PROD_PACKAGE }}
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: build
+        run: |
+          docker-compose -f docker-compose.yaml build --no-cache --progress=plain
+          docker-compose -f docker-compose.yaml run appimage make all
+
+      # https://github.com/marketplace/actions/upload-to-github-release
+      - uses: xresloader/upload-to-github-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "./app/*.AppImage; ./app/*.md5"
+          #delete_file: "random-name-*.txt;random-*.txt"
+          release_id: ${{ steps.create_release.outputs.id }}
+          #overwrite: true
+          verbose: true
+          #tags: true
+          draft: false
+          default_release_name: "Master-PDF-Editor v"

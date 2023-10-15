@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Master PDF Editor 5
+Comment=Edit PDF files
+Exec=AppRun %f
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=MasterPDFEditor
+Categories=Office;Graphics;
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;
+StartupWMClass=Pencil
+StartupNotify=true

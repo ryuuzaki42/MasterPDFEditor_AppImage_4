@@ -9,3 +9,4 @@ RUN apt-get install -y kmod make gcc wget
 RUN apt-get install -y rpm2cpio cpio
 RUN apt-get install -y fuse
 RUN apt-get install -y file
+RUN apt-get install -y libpkcs11-helper1

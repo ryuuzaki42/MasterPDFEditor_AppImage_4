@@ -8,7 +8,7 @@ VERSION := $(shell grep -o "MasterPDFEditor:.*" README.md | cut -d ' ' -f2)
 all: clean init
 
 	mkdir --parents $(PWD)/build/Boilerplate.AppDir/mpe
-	$(PWD)/bin/Apprepo.AppImage --destination=$(PWD)/build appdir boilerplate libatk1.0-0
+	$(PWD)/bin/Apprepo.AppImage --destination=$(PWD)/build appdir boilerplate libatk1.0-0 libpkcs11-helper1
 
 	# Check download links here:
 	# https://code-industry.net/free-pdf-editor/

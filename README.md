@@ -8,4 +8,4 @@
 https://code-industry.net/get-masterpdfeditor/
 
 ---
-Based on: https://github.com/area-of-dev/Master-PDF-Editor.AppImage/releases/
+Based on: https://github.com/area-of-dev/Master-PDF-Editor.AppImage

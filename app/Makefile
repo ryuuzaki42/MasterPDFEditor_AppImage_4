@@ -61,7 +61,7 @@ init:
 	mkdir --parents $(PWD)/bin
 
 	#wget https://apprepo.de/appimage/download/apprepo --output-document=$(PWD)/bin/Apprepo.AppImage
-	https://github.com/ryuuzaki42/MasterPDFEditor_AppImage_4/releases/download/0/apprepo-8891304-Mar.28.2023.AppImage --output-document=$(PWD)/bin/Apprepo.AppImage
+	wget https://github.com/ryuuzaki42/MasterPDFEditor_AppImage_4/releases/download/0/apprepo-8891304-Mar.28.2023.AppImage --output-document=$(PWD)/bin/Apprepo.AppImage
 	chmod +x $(PWD)/bin/Apprepo.AppImage
 
 	wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage \

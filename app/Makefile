@@ -1,6 +1,6 @@
 PWD:=$(shell pwd)
 
-$(shell wget https://raw.githubusercontent.com/ryuuzaki42/MasterPDFEditor_AppImage/master/README.md)
+$(shell wget https://raw.githubusercontent.com/ryuuzaki42/MasterPDFEditor_AppImage_4/master/README.md)
 VERSION := $(shell grep -o "MasterPDFEditor:.*" README.md | cut -d ' ' -f2)
 
 .PHONY: all

@@ -1,5 +1,11 @@
 
-# MasterPDFEditor.AppImage
+# MasterPDFEditor_AppImage_4
+
+Master PDF Editor is a commercial solution for editing PDF files.
+
+It enables you to create, edit, view, encrypt, sign and print interactive PDF documents.
+
+https://code-industry.net/masterpdfeditor/
 
 ## Repository: https://github.com/ryuuzaki42/MasterPDFEditor_AppImage_4/
     MasterPDFEditor: 4.3.89

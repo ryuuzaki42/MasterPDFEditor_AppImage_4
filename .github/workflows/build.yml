@@ -23,8 +23,9 @@ jobs:
 
       - name: build
         run: |
-          docker-compose -f docker-compose.yaml build --no-cache --progress=plain
-          docker-compose -f docker-compose.yaml run appimage make all
+          #https://github.com/orgs/community/discussions/116610
+          docker compose -f docker-compose.yaml build --no-cache --progress=plain
+          docker compose -f docker-compose.yaml run appimage make all
 
       # https://github.com/marketplace/actions/upload-to-github-release
       - uses: xresloader/upload-to-github-release@main
